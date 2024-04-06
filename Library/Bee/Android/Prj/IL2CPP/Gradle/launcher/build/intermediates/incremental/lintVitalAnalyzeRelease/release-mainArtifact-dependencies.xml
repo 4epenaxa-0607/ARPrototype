@@ -6,7 +6,7 @@
         simpleName="Gradle:unityLibrary"/>
   </compile>
   <package
-      roots="C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release,__local_aars__:C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar,:arcore_client:@aar,:ARPresto:@aar,:UnityARCore:@aar,:unityandroidpermissions:@aar,C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary:xrmanifest.androidlib::release">
+      roots="C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release,__local_aars__:C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar,:arcore_client:@aar,:UnityARCore:@aar,:ARPresto:@aar,:unityandroidpermissions:@aar,C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary:xrmanifest.androidlib::release">
     <dependency
         name="C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
         simpleName="Gradle:unityLibrary"/>
@@ -15,9 +15,9 @@
     <dependency
         name=":arcore_client:@aar"/>
     <dependency
-        name=":ARPresto:@aar"/>
-    <dependency
         name=":UnityARCore:@aar"/>
+    <dependency
+        name=":ARPresto:@aar"/>
     <dependency
         name=":unityandroidpermissions:@aar"/>
     <dependency

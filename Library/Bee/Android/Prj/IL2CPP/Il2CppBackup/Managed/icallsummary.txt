@@ -46,6 +46,9 @@ Unity.Profiling.ProfilerRecorder::GetLastValue_Injected
 Unity.Profiling.ProfilerRecorder::Control_Injected
 Unity.Profiling.ProfilerRecorder::Create_Injected
 Unity.Profiling.ProfilerRecorder::GetSampleInternal_Injected
+UnityEngine.Analytics.Analytics::IsInitialized
+UnityEngine.Analytics.Analytics::RegisterEventWithLimit
+UnityEngine.Analytics.Analytics::SendEventWithLimit
 UnityEngine.Android.AndroidApp::get_UnityPlayerRaw
 UnityEngine.AndroidJNI::CallBooleanMethodUnsafe
 UnityEngine.AndroidJNI::CallStaticBooleanMethodUnsafe
@@ -240,6 +243,9 @@ UnityEngine.Application::get_isPlaying
 UnityEngine.Application::get_runInBackground
 UnityEngine.Application::get_targetFrameRate
 UnityEngine.Application::get_dataPath
+UnityEngine.Application::get_productName
+UnityEngine.Application::get_unityVersion
+UnityEngine.Application::get_version
 UnityEngine.Application::OpenURL
 UnityEngine.Application::Quit
 UnityEngine.Application::set_targetFrameRate
@@ -247,6 +253,8 @@ UnityEngine.Application::get_platform
 UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
+UnityEngine.AudioSource::Play
+UnityEngine.AudioSource::PlayHelper
 UnityEngine.AudioSource::PlayOneShotHelper
 UnityEngine.AudioSource::Stop
 UnityEngine.AudioSource::set_loop
@@ -534,6 +542,7 @@ UnityEngine.GameObject::GetComponentInParent
 UnityEngine.GameObject::Internal_AddComponentWithType
 UnityEngine.GameObject::TryGetComponentInternal
 UnityEngine.GameObject::CreatePrimitive
+UnityEngine.GameObject::Find
 UnityEngine.GameObject::FindGameObjectsWithTag
 UnityEngine.GameObject::get_transform
 UnityEngine.GeometryUtility::TestPlanesAABB_Injected
@@ -1222,6 +1231,7 @@ UnityEngine.SceneManagement.Scene::GetRootGameObjectsInternal
 UnityEngine.SceneManagement.SceneManager::get_sceneCount
 UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected
 UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected
+UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected
 UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width

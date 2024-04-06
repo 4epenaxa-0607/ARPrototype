@@ -6,15 +6,15 @@ INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\s
 INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 MERGED from [:unityLibrary] C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-80:12
 MERGED from [:arcore_client:] C:\Users\Илья\.gradle\caches\transforms-3\ece6358c3c3b544f3d6f3cc51ffa918c\transformed\arcore_client\AndroidManifest.xml:17:1-49:12
-MERGED from [:ARPresto:] C:\Users\Илья\.gradle\caches\transforms-3\8f332da5813f8e3bb1c36d17c5dfc750\transformed\ARPresto\AndroidManifest.xml:2:1-11:12
 MERGED from [:UnityARCore:] C:\Users\Илья\.gradle\caches\transforms-3\0ee457854d675cbcec243f7feb0f7d5e\transformed\UnityARCore\AndroidManifest.xml:2:1-11:12
+MERGED from [:ARPresto:] C:\Users\Илья\.gradle\caches\transforms-3\8f332da5813f8e3bb1c36d17c5dfc750\transformed\ARPresto\AndroidManifest.xml:2:1-11:12
 MERGED from [:unityandroidpermissions:] C:\Users\Илья\.gradle\caches\transforms-3\942592b881e85bb2d9a4b9fd85d0e97b\transformed\unityandroidpermissions\AndroidManifest.xml:6:1-15:12
 MERGED from [:unityLibrary:xrmanifest.androidlib] C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-14:12
 INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 	package
-		ADDED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:70-108
+		ADDED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:70-110
 		INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
 		INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
 	android:versionName
@@ -22,7 +22,7 @@ INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\s
 		ADDED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 		INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:109-155
+		ADDED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:111-157
 	android:versionCode
 		INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
 		ADDED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
@@ -30,7 +30,7 @@ INJECTED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\s
 	xmlns:android
 		ADDED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:11-69
 	android:installLocation
-		ADDED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:156-196
+		ADDED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:158-198
 application
 ADDED from C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-83
 MERGED from [:unityLibrary] C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:32:5-78:19
@@ -65,10 +65,10 @@ MERGED from [:unityLibrary] C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gra
 MERGED from [:unityLibrary] C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:6:5-8:41
 MERGED from [:arcore_client:] C:\Users\Илья\.gradle\caches\transforms-3\ece6358c3c3b544f3d6f3cc51ffa918c\transformed\arcore_client\AndroidManifest.xml:25:5-27:41
 MERGED from [:arcore_client:] C:\Users\Илья\.gradle\caches\transforms-3\ece6358c3c3b544f3d6f3cc51ffa918c\transformed\arcore_client\AndroidManifest.xml:25:5-27:41
-MERGED from [:ARPresto:] C:\Users\Илья\.gradle\caches\transforms-3\8f332da5813f8e3bb1c36d17c5dfc750\transformed\ARPresto\AndroidManifest.xml:7:5-9:41
-MERGED from [:ARPresto:] C:\Users\Илья\.gradle\caches\transforms-3\8f332da5813f8e3bb1c36d17c5dfc750\transformed\ARPresto\AndroidManifest.xml:7:5-9:41
 MERGED from [:UnityARCore:] C:\Users\Илья\.gradle\caches\transforms-3\0ee457854d675cbcec243f7feb0f7d5e\transformed\UnityARCore\AndroidManifest.xml:7:5-9:41
 MERGED from [:UnityARCore:] C:\Users\Илья\.gradle\caches\transforms-3\0ee457854d675cbcec243f7feb0f7d5e\transformed\UnityARCore\AndroidManifest.xml:7:5-9:41
+MERGED from [:ARPresto:] C:\Users\Илья\.gradle\caches\transforms-3\8f332da5813f8e3bb1c36d17c5dfc750\transformed\ARPresto\AndroidManifest.xml:7:5-9:41
+MERGED from [:ARPresto:] C:\Users\Илья\.gradle\caches\transforms-3\8f332da5813f8e3bb1c36d17c5dfc750\transformed\ARPresto\AndroidManifest.xml:7:5-9:41
 MERGED from [:unityandroidpermissions:] C:\Users\Илья\.gradle\caches\transforms-3\942592b881e85bb2d9a4b9fd85d0e97b\transformed\unityandroidpermissions\AndroidManifest.xml:11:5-13:41
 MERGED from [:unityandroidpermissions:] C:\Users\Илья\.gradle\caches\transforms-3\942592b881e85bb2d9a4b9fd85d0e97b\transformed\unityandroidpermissions\AndroidManifest.xml:11:5-13:41
 MERGED from [:unityLibrary:xrmanifest.androidlib] C:\AR\ARPrototype\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41

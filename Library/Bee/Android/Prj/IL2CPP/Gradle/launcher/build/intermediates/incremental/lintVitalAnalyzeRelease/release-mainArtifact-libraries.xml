@@ -30,10 +30,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name=":ARPresto:@aar"
-      jars="C:\Users\Илья\.gradle\caches\transforms-3\8f332da5813f8e3bb1c36d17c5dfc750\transformed\ARPresto\jars\classes.jar"
-      resolved=":ARPresto:"
-      folder="C:\Users\Илья\.gradle\caches\transforms-3\8f332da5813f8e3bb1c36d17c5dfc750\transformed\ARPresto"
+      name=":UnityARCore:@aar"
+      jars="C:\Users\Илья\.gradle\caches\transforms-3\0ee457854d675cbcec243f7feb0f7d5e\transformed\UnityARCore\jars\classes.jar"
+      resolved=":UnityARCore:"
+      folder="C:\Users\Илья\.gradle\caches\transforms-3\0ee457854d675cbcec243f7feb0f7d5e\transformed\UnityARCore"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -43,10 +43,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name=":UnityARCore:@aar"
-      jars="C:\Users\Илья\.gradle\caches\transforms-3\0ee457854d675cbcec243f7feb0f7d5e\transformed\UnityARCore\jars\classes.jar"
-      resolved=":UnityARCore:"
-      folder="C:\Users\Илья\.gradle\caches\transforms-3\0ee457854d675cbcec243f7feb0f7d5e\transformed\UnityARCore"
+      name=":ARPresto:@aar"
+      jars="C:\Users\Илья\.gradle\caches\transforms-3\8f332da5813f8e3bb1c36d17c5dfc750\transformed\ARPresto\jars\classes.jar"
+      resolved=":ARPresto:"
+      folder="C:\Users\Илья\.gradle\caches\transforms-3\8f332da5813f8e3bb1c36d17c5dfc750\transformed\ARPresto"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

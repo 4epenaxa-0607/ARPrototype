@@ -220,6 +220,22 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : Unity.Profiling.ProfilerRecorder
 
+	//Start Registrations for type : UnityEngine.Analytics.Analytics
+
+		//System.Boolean UnityEngine.Analytics.Analytics::IsInitialized()
+		void Register_UnityEngine_Analytics_Analytics_IsInitialized();
+		Register_UnityEngine_Analytics_Analytics_IsInitialized();
+
+		//UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::RegisterEventWithLimit(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.String,System.Boolean)
+		void Register_UnityEngine_Analytics_Analytics_RegisterEventWithLimit();
+		Register_UnityEngine_Analytics_Analytics_RegisterEventWithLimit();
+
+		//UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::SendEventWithLimit(System.String,System.Object,System.Int32,System.String)
+		void Register_UnityEngine_Analytics_Analytics_SendEventWithLimit();
+		Register_UnityEngine_Analytics_Analytics_SendEventWithLimit();
+
+	//End Registrations for type : UnityEngine.Analytics.Analytics
+
 	//Start Registrations for type : UnityEngine.Android.AndroidApp
 
 		//System.IntPtr UnityEngine.Android.AndroidApp::get_UnityPlayerRaw()
@@ -1022,6 +1038,18 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_get_dataPath();
 		Register_UnityEngine_Application_get_dataPath();
 
+		//System.String UnityEngine.Application::get_productName()
+		void Register_UnityEngine_Application_get_productName();
+		Register_UnityEngine_Application_get_productName();
+
+		//System.String UnityEngine.Application::get_unityVersion()
+		void Register_UnityEngine_Application_get_unityVersion();
+		Register_UnityEngine_Application_get_unityVersion();
+
+		//System.String UnityEngine.Application::get_version()
+		void Register_UnityEngine_Application_get_version();
+		Register_UnityEngine_Application_get_version();
+
 		//System.Void UnityEngine.Application::OpenURL(System.String)
 		void Register_UnityEngine_Application_OpenURL();
 		Register_UnityEngine_Application_OpenURL();
@@ -1061,6 +1089,14 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.AudioSettings
 
 	//Start Registrations for type : UnityEngine.AudioSource
+
+		//System.Void UnityEngine.AudioSource::Play(System.Double)
+		void Register_UnityEngine_AudioSource_Play();
+		Register_UnityEngine_AudioSource_Play();
+
+		//System.Void UnityEngine.AudioSource::PlayHelper(UnityEngine.AudioSource,System.UInt64)
+		void Register_UnityEngine_AudioSource_PlayHelper();
+		Register_UnityEngine_AudioSource_PlayHelper();
 
 		//System.Void UnityEngine.AudioSource::PlayOneShotHelper(UnityEngine.AudioSource,UnityEngine.AudioClip,System.Single)
 		void Register_UnityEngine_AudioSource_PlayOneShotHelper();
@@ -2337,6 +2373,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.GameObject UnityEngine.GameObject::CreatePrimitive(UnityEngine.PrimitiveType)
 		void Register_UnityEngine_GameObject_CreatePrimitive();
 		Register_UnityEngine_GameObject_CreatePrimitive();
+
+		//UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
+		void Register_UnityEngine_GameObject_Find();
+		Register_UnityEngine_GameObject_Find();
 
 		//UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
 		void Register_UnityEngine_GameObject_FindGameObjectsWithTag();
@@ -5415,6 +5455,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_SceneManagement_SceneManager_GetSceneAt_Injected();
 
 	//End Registrations for type : UnityEngine.SceneManagement.SceneManager
+
+	//Start Registrations for type : UnityEngine.SceneManagement.SceneManagerAPIInternal
+
+		//UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected(System.String,System.Int32,UnityEngine.SceneManagement.LoadSceneParameters&,System.Boolean)
+		void Register_UnityEngine_SceneManagement_SceneManagerAPIInternal_LoadSceneAsyncNameIndexInternal_Injected();
+		Register_UnityEngine_SceneManagement_SceneManagerAPIInternal_LoadSceneAsyncNameIndexInternal_Injected();
+
+	//End Registrations for type : UnityEngine.SceneManagement.SceneManagerAPIInternal
 
 	//Start Registrations for type : UnityEngine.Screen
 

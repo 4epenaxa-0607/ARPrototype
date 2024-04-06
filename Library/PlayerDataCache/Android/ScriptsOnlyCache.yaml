@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ButtonLogicMainMenu
     - TrackingImage
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
@@ -58,6 +59,10 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     Unity.XR.ARCore.Editor.dll:
     - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.ARCore.dll:
@@ -95,6 +100,34 @@ ScriptsOnlyBuild:
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
+    Unity.XR.OpenXR.Editor.dll:
+    - UnityEditor.XR.OpenXR.OpenXREditorSettings
+    - UnityEditor.XR.OpenXR.OpenXRPackageSettings
+    Unity.XR.OpenXR.Features.ConformanceAutomation.dll:
+    - UnityEngine.XR.OpenXR.Features.ConformanceAutomation.ConformanceAutomationFeature
+    Unity.XR.OpenXR.Features.MetaQuestSupport.dll:
+    - UnityEngine.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeature
+    Unity.XR.OpenXR.Features.MockRuntime.dll:
+    - UnityEngine.XR.OpenXR.Features.Mock.MockRuntime
+    Unity.XR.OpenXR.Features.OculusQuestSupport.dll:
+    - UnityEngine.XR.OpenXR.Features.OculusQuestSupport.OculusQuestFeature
+    Unity.XR.OpenXR.Features.RuntimeDebugger.dll:
+    - UnityEngine.XR.OpenXR.Features.RuntimeDebugger.RuntimeDebuggerOpenXRFeature
+    Unity.XR.OpenXR.dll:
+    - UnityEngine.XR.OpenXR.Features.Interactions.DPadInteraction
+    - UnityEngine.XR.OpenXR.Features.Interactions.EyeGazeInteraction
+    - UnityEngine.XR.OpenXR.Features.Interactions.HPReverbG2ControllerProfile
+    - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveControllerProfile
+    - UnityEngine.XR.OpenXR.Features.Interactions.HandCommonPosesInteraction
+    - UnityEngine.XR.OpenXR.Features.Interactions.HandInteractionProfile
+    - UnityEngine.XR.OpenXR.Features.Interactions.KHRSimpleControllerProfile
+    - UnityEngine.XR.OpenXR.Features.Interactions.MetaQuestTouchProControllerProfile
+    - UnityEngine.XR.OpenXR.Features.Interactions.MicrosoftHandInteraction
+    - UnityEngine.XR.OpenXR.Features.Interactions.MicrosoftMotionControllerProfile
+    - UnityEngine.XR.OpenXR.Features.Interactions.OculusTouchControllerProfile
+    - UnityEngine.XR.OpenXR.Features.Interactions.PalmPoseInteraction
+    - UnityEngine.XR.OpenXR.Features.Interactions.ValveIndexControllerProfile
+    - UnityEngine.XR.OpenXR.OpenXRSettings
     Unity.XR.Simulation.Editor.dll:
     - UnityEditor.XR.Simulation.SimulationEnvironmentAssetsManager
     - UnityEditor.XR.Simulation.XREnvironmentViewManager
@@ -105,8 +138,17 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Simulation.SimulatedMeshClassification
     - UnityEngine.XR.Simulation.SimulatedTrackedImage
     - UnityEngine.XR.Simulation.SimulationEnvironment
+    - UnityEngine.XR.Simulation.SimulationLoader
     - UnityEngine.XR.Simulation.XRSimulationPreferences
     - UnityEngine.XR.Simulation.XRSimulationRuntimeSettings
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -126,6 +168,13 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
   serializedClasses:
     Unity.InputSystem:
     - UnityEngine.InputSystem.InputAction
@@ -159,6 +208,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
+    - TMPro.VertexGradient
     Unity.XR.ARSubsystems:
     - UnityEngine.XR.ARSubsystems.SerializableDictionary`2/KeyValuePair[System.String,System.Byte[]]
     - UnityEngine.XR.ARSubsystems.SerializableDictionary`2[System.String,System.Byte[]]
@@ -173,6 +223,8 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.UI.UIHoverEnterEvent
     - UnityEngine.XR.Interaction.Toolkit.UI.UIHoverExitEvent
     - UnityEngine.XR.Interaction.Toolkit.XRInteractorEvent
+    Unity.XR.OpenXR.Features.MetaQuestSupport:
+    - UnityEngine.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeature/TargetDevice
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
@@ -197,6 +249,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: UnityEngine.AudioModule
+    fullTypeName: UnityEngine.AudioSource
+    methodName: Play
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: OnScrollbarClicked
@@ -237,6 +292,167 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
   sceneClasses:
+    Assets/My/MainMenu/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16890}
+    - Class: 114
+      Script: {instanceID: 16936}
+    - Class: 114
+      Script: {instanceID: 17066}
+    - Class: 114
+      Script: {instanceID: 17462}
+    - Class: 114
+      Script: {instanceID: 17726}
+    - Class: 114
+      Script: {instanceID: 18146}
+    - Class: 114
+      Script: {instanceID: 18540}
+    - Class: 114
+      Script: {instanceID: 18688}
+    - Class: 114
+      Script: {instanceID: 18768}
+    - Class: 114
+      Script: {instanceID: 18926}
+    - Class: 114
+      Script: {instanceID: 19550}
+    - Class: 114
+      Script: {instanceID: 20388}
+    - Class: 114
+      Script: {instanceID: 20436}
+    - Class: 114
+      Script: {instanceID: 20506}
+    - Class: 114
+      Script: {instanceID: 20588}
+    - Class: 114
+      Script: {instanceID: 20786}
+    - Class: 114
+      Script: {instanceID: 20804}
+    - Class: 114
+      Script: {instanceID: 21320}
+    - Class: 114
+      Script: {instanceID: 21330}
+    - Class: 114
+      Script: {instanceID: 21424}
+    - Class: 114
+      Script: {instanceID: 21530}
+    - Class: 114
+      Script: {instanceID: 21606}
+    - Class: 114
+      Script: {instanceID: 22064}
+    - Class: 114
+      Script: {instanceID: 22126}
+    - Class: 114
+      Script: {instanceID: 22308}
+    - Class: 114
+      Script: {instanceID: 23096}
+    - Class: 114
+      Script: {instanceID: 24192}
+    - Class: 114
+      Script: {instanceID: 24272}
+    - Class: 114
+      Script: {instanceID: 24430}
+    - Class: 114
+      Script: {instanceID: 24658}
+    - Class: 114
+      Script: {instanceID: 24852}
+    - Class: 114
+      Script: {instanceID: 25274}
+    - Class: 114
+      Script: {instanceID: 25378}
+    - Class: 114
+      Script: {instanceID: 25628}
+    - Class: 114
+      Script: {instanceID: 25708}
+    - Class: 114
+      Script: {instanceID: 25860}
+    - Class: 114
+      Script: {instanceID: 26020}
+    - Class: 114
+      Script: {instanceID: 26136}
+    - Class: 114
+      Script: {instanceID: 26422}
+    - Class: 114
+      Script: {instanceID: 26504}
+    - Class: 114
+      Script: {instanceID: 27234}
+    - Class: 114
+      Script: {instanceID: 27290}
+    - Class: 114
+      Script: {instanceID: 27516}
+    - Class: 114
+      Script: {instanceID: 27590}
+    - Class: 114
+      Script: {instanceID: 27798}
+    - Class: 114
+      Script: {instanceID: 27892}
+    - Class: 114
+      Script: {instanceID: 28128}
+    - Class: 114
+      Script: {instanceID: 28296}
+    - Class: 114
+      Script: {instanceID: 28400}
+    - Class: 114
+      Script: {instanceID: 28412}
+    - Class: 114
+      Script: {instanceID: 28508}
+    - Class: 114
+      Script: {instanceID: 28658}
+    - Class: 114
+      Script: {instanceID: 28826}
+    - Class: 114
+      Script: {instanceID: 29160}
+    - Class: 114
+      Script: {instanceID: 29534}
+    - Class: 114
+      Script: {instanceID: 30066}
+    - Class: 114
+      Script: {instanceID: 32434}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/My/TrackedImage/TrackedImage.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -256,169 +472,59 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16888}
+      Script: {instanceID: 17028}
     - Class: 114
-      Script: {instanceID: 16934}
+      Script: {instanceID: 18706}
     - Class: 114
-      Script: {instanceID: 17026}
+      Script: {instanceID: 19140}
     - Class: 114
-      Script: {instanceID: 17064}
+      Script: {instanceID: 19230}
     - Class: 114
-      Script: {instanceID: 17452}
+      Script: {instanceID: 19736}
     - Class: 114
-      Script: {instanceID: 17710}
+      Script: {instanceID: 21610}
     - Class: 114
-      Script: {instanceID: 18122}
+      Script: {instanceID: 22076}
     - Class: 114
-      Script: {instanceID: 18510}
+      Script: {instanceID: 22648}
     - Class: 114
-      Script: {instanceID: 18656}
+      Script: {instanceID: 23056}
     - Class: 114
-      Script: {instanceID: 18674}
+      Script: {instanceID: 25274}
     - Class: 114
-      Script: {instanceID: 18732}
+      Script: {instanceID: 25502}
     - Class: 114
-      Script: {instanceID: 18884}
+      Script: {instanceID: 25864}
     - Class: 114
-      Script: {instanceID: 19090}
+      Script: {instanceID: 26728}
     - Class: 114
-      Script: {instanceID: 19180}
+      Script: {instanceID: 27778}
     - Class: 114
-      Script: {instanceID: 19490}
+      Script: {instanceID: 27800}
     - Class: 114
-      Script: {instanceID: 19672}
-    - Class: 114
-      Script: {instanceID: 20312}
-    - Class: 114
-      Script: {instanceID: 20360}
-    - Class: 114
-      Script: {instanceID: 20430}
-    - Class: 114
-      Script: {instanceID: 20512}
-    - Class: 114
-      Script: {instanceID: 20708}
-    - Class: 114
-      Script: {instanceID: 20726}
-    - Class: 114
-      Script: {instanceID: 21234}
-    - Class: 114
-      Script: {instanceID: 21336}
-    - Class: 114
-      Script: {instanceID: 21440}
-    - Class: 114
-      Script: {instanceID: 21516}
-    - Class: 114
-      Script: {instanceID: 21520}
-    - Class: 114
-      Script: {instanceID: 21962}
-    - Class: 114
-      Script: {instanceID: 21974}
-    - Class: 114
-      Script: {instanceID: 22024}
-    - Class: 114
-      Script: {instanceID: 22198}
-    - Class: 114
-      Script: {instanceID: 22526}
-    - Class: 114
-      Script: {instanceID: 22932}
-    - Class: 114
-      Script: {instanceID: 22972}
-    - Class: 114
-      Script: {instanceID: 24046}
-    - Class: 114
-      Script: {instanceID: 24120}
-    - Class: 114
-      Script: {instanceID: 24276}
-    - Class: 114
-      Script: {instanceID: 24690}
-    - Class: 114
-      Script: {instanceID: 25106}
-    - Class: 114
-      Script: {instanceID: 25206}
-    - Class: 114
-      Script: {instanceID: 25330}
-    - Class: 114
-      Script: {instanceID: 25452}
-    - Class: 114
-      Script: {instanceID: 25530}
-    - Class: 114
-      Script: {instanceID: 25674}
-    - Class: 114
-      Script: {instanceID: 25678}
-    - Class: 114
-      Script: {instanceID: 25834}
-    - Class: 114
-      Script: {instanceID: 25950}
-    - Class: 114
-      Script: {instanceID: 26228}
-    - Class: 114
-      Script: {instanceID: 26308}
-    - Class: 114
-      Script: {instanceID: 26522}
-    - Class: 114
-      Script: {instanceID: 27012}
-    - Class: 114
-      Script: {instanceID: 27066}
-    - Class: 114
-      Script: {instanceID: 27288}
-    - Class: 114
-      Script: {instanceID: 27362}
-    - Class: 114
-      Script: {instanceID: 27544}
-    - Class: 114
-      Script: {instanceID: 27564}
-    - Class: 114
-      Script: {instanceID: 27566}
-    - Class: 114
-      Script: {instanceID: 27658}
-    - Class: 114
-      Script: {instanceID: 27680}
-    - Class: 114
-      Script: {instanceID: 27884}
-    - Class: 114
-      Script: {instanceID: 28046}
-    - Class: 114
-      Script: {instanceID: 28158}
-    - Class: 114
-      Script: {instanceID: 28252}
-    - Class: 114
-      Script: {instanceID: 28396}
-    - Class: 114
-      Script: {instanceID: 28560}
-    - Class: 114
-      Script: {instanceID: 28884}
-    - Class: 114
-      Script: {instanceID: 29250}
-    - Class: 114
-      Script: {instanceID: 29772}
+      Script: {instanceID: 27916}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -541,6 +647,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: TeleportationArea
+  - hash:
+      serializedVersion: 2
+      Hash: 70aa4ee689d87b9601a7798eedf6d382
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR
+    className: OpenXRSettings
   - hash:
       serializedVersion: 2
       Hash: 6b2b20d5352b9f1294595326f54bd3c2
@@ -687,6 +799,12 @@ ScriptsOnlyBuild:
     className: ClimbProvider
   - hash:
       serializedVersion: 2
+      Hash: cd6a1b1edf067d8de34adb13e06e9cc8
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: MicrosoftHandInteraction
+  - hash:
+      serializedVersion: 2
       Hash: 8c03d6ee69f5dc5ed9b56c1be75f5b62
     assemblyName: Unity.XR.CoreUtils
     namespaceName: Unity.XR.CoreUtils
@@ -733,6 +851,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: ActionBasedSnapTurnProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 1014038eaef7fa38142f9d8e71a6cd5a
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: PalmPoseInteraction
   - hash:
       serializedVersion: 2
       Hash: 915204dac8acad99f076d6e72ada0a0f
@@ -793,6 +917,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
     className: UniversalRenderPipelineGlobalSettings
+  - hash:
+      serializedVersion: 2
+      Hash: d0a2e4a0399086564e9c834900f2aee1
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR
+    className: OpenXRRestarter
   - hash:
       serializedVersion: 2
       Hash: 6524e645ed1f3d7f86031133baa8958c
@@ -859,6 +989,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionExit2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: bfac4d7dc5801274d43ac08d7477e800
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: MetaQuestTouchProControllerProfile
   - hash:
       serializedVersion: 2
       Hash: 0ed7dfcb5356681e6627b207891cb849
@@ -1185,6 +1321,12 @@ ScriptsOnlyBuild:
     className: VolumeComponent
   - hash:
       serializedVersion: 2
+      Hash: 4f81b12e1a60b251fa0500c327ae9162
+    assemblyName: Unity.XR.OpenXR.Features.ConformanceAutomation
+    namespaceName: UnityEngine.XR.OpenXR.Features.ConformanceAutomation
+    className: ConformanceAutomationFeature
+  - hash:
+      serializedVersion: 2
       Hash: 0e663c222bb83f92bce24cf73a0e299f
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering
@@ -1359,10 +1501,22 @@ ScriptsOnlyBuild:
     className: ProbeVolume
   - hash:
       serializedVersion: 2
+      Hash: d12b219dbec553062bcbea9e5cbbfbd4
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: DPadInteraction
+  - hash:
+      serializedVersion: 2
       Hash: d2ecd94550edf1b56aff07b1f4e41c57
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerEnter2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: d33fbcfad4a49ca0b4894221a7a307e8
+    assemblyName: Unity.XR.OpenXR.Features.MetaQuestSupport
+    namespaceName: UnityEngine.XR.OpenXR.Features.MetaQuestSupport
+    className: MetaQuestFeature
   - hash:
       serializedVersion: 2
       Hash: e8d390bd9ecacc453a7500b90d0c0292
@@ -1453,6 +1607,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: TrackingImage
+  - hash:
+      serializedVersion: 2
+      Hash: e0a91173084bd8b8cce7e6e00e343381
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: OculusTouchControllerProfile
   - hash:
       serializedVersion: 2
       Hash: 2f43860e745f8edade7bd381809e537b
@@ -1549,6 +1709,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation
     className: XRDeviceSimulator
+  - hash:
+      serializedVersion: 2
+      Hash: 62e9fc592fc9bc15cfc5af32815e77fc
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: EyeGazeInteraction
   - hash:
       serializedVersion: 2
       Hash: 82a7c77ba1da2d34c81569e79eeeed9d
@@ -1911,6 +2077,12 @@ ScriptsOnlyBuild:
     className: ShadowCaster2D
   - hash:
       serializedVersion: 2
+      Hash: 80fa426630529cd11efb37c914919b1c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ButtonLogic
+  - hash:
+      serializedVersion: 2
       Hash: 07b28a9e25d831c17a442012a4dbb96e
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit.UI
@@ -1951,6 +2123,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f94be67d2d10fb9a7444ceeb085a8e27
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SelectingMask
   - hash:
       serializedVersion: 2
       Hash: 715f7928b39881049ce8c46350cb8681
@@ -2083,6 +2261,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: XRGazeInteractor
+  - hash:
+      serializedVersion: 2
+      Hash: c67fed51bde67baee143e72e4ea37178
+    assemblyName: Unity.XR.OpenXR.Features.RuntimeDebugger
+    namespaceName: UnityEngine.XR.OpenXR.Features.RuntimeDebugger
+    className: RuntimeDebuggerOpenXRFeature
   - hash:
       serializedVersion: 2
       Hash: 36011f0a95d05fc59acadcc3e436f7df
@@ -2307,10 +2491,28 @@ ScriptsOnlyBuild:
     className: Vignette
   - hash:
       serializedVersion: 2
+      Hash: e34a2bf62ae5e17a9c6062787cfffbdb
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: HPReverbG2ControllerProfile
+  - hash:
+      serializedVersion: 2
+      Hash: 8d59aafb704835b540825c848e0ac20f
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: MicrosoftMotionControllerProfile
+  - hash:
+      serializedVersion: 2
       Hash: 8dd7c0d5fe08cd5dce07400b145a963d
     assemblyName: Unity.XR.ARFoundation
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARTrackedImageManager
+  - hash:
+      serializedVersion: 2
+      Hash: ca0b1e5e177d32220d685f0060cc8de5
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: KHRSimpleControllerProfile
   - hash:
       serializedVersion: 2
       Hash: 82ca4776eb3cfafbdec97b1131c6e21e
@@ -2413,6 +2615,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: d822993a2078e91b66d0e1295357faea
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: HandCommonPosesInteraction
   - hash:
       serializedVersion: 2
       Hash: 7d026ae582dc02c5edc3fc23b8c03ff7
@@ -2541,6 +2749,12 @@ ScriptsOnlyBuild:
     className: ARTrackedObjectManagerListener
   - hash:
       serializedVersion: 2
+      Hash: 92edf63af71f234cc2ed040fbb026bcf
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: HandInteractionProfile
+  - hash:
+      serializedVersion: 2
       Hash: 2cec710e4ef8cb4582b8d556bd4c51a4
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.State
@@ -2569,6 +2783,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: CharacterControllerDriver
+  - hash:
+      serializedVersion: 2
+      Hash: f80587da72ceed966d1c1f2096a626b7
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: HTCViveControllerProfile
+  - hash:
+      serializedVersion: 2
+      Hash: 7a5cffeb6a4088cdf5cd3f6ecfec46ad
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR
+    className: OpenXRLoader
   - hash:
       serializedVersion: 2
       Hash: 8ff1d0df3dc6f9b6415fc1717c93a2c8
@@ -2659,6 +2885,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: fa91378f31c54029c3a0d70583208e48
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR
+    className: OpenXRLoaderNoPreInit
   - hash:
       serializedVersion: 2
       Hash: 67ba98f8a8977f3e60e5f0e049923033
@@ -2817,6 +3049,12 @@ ScriptsOnlyBuild:
     className: DeviceBasedSnapTurnProvider
   - hash:
       serializedVersion: 2
+      Hash: 4aa75eebe5b8b3bd362b4adcad58df8f
+    assemblyName: Unity.XR.OpenXR.Features.MockRuntime
+    namespaceName: UnityEngine.XR.OpenXR.Features.Mock
+    className: MockRuntime
+  - hash:
+      serializedVersion: 2
       Hash: 67272c9c30c50b68ef1ce72ac0191c57
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -2925,6 +3163,12 @@ ScriptsOnlyBuild:
     className: ARRaycastManager
   - hash:
       serializedVersion: 2
+      Hash: 74de9ee03f988c4c25989be24f4ff5bc
+    assemblyName: Unity.XR.OpenXR
+    namespaceName: UnityEngine.XR.OpenXR.Features.Interactions
+    className: ValveIndexControllerProfile
+  - hash:
+      serializedVersion: 2
       Hash: 0763e9b439042fa7ebcfe5eb2850a1a5
     assemblyName: Unity.XR.CoreUtils
     namespaceName: Unity.XR.CoreUtils.Datums
@@ -2947,6 +3191,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: GrabMoveProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 060552f194082617403d8e97c7540651
+    assemblyName: Unity.XR.OpenXR.Features.OculusQuestSupport
+    namespaceName: UnityEngine.XR.OpenXR.Features.OculusQuestSupport
+    className: OculusQuestFeature
   - hash:
       serializedVersion: 2
       Hash: 711350058a1e622134b2695eb8d9cc0e
@@ -2979,17 +3229,12 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 80fa426630529cd11efb37c914919b1c
+      Hash: ec035a90ce612354438917cf3785710c
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: ButtonLogic
-  - hash:
-      serializedVersion: 2
-      Hash: f94be67d2d10fb9a7444ceeb085a8e27
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SelectingMask
+    className: ButtonLogicMainMenu
   platform: 13
   scenePathNames:
+  - Assets/My/MainMenu/MainMenu.unity
   - Assets/My/TrackedImage/TrackedImage.unity
-  playerPath: C:/AndroidStudioAR
+  playerPath: C:/AR application/qwe.apk

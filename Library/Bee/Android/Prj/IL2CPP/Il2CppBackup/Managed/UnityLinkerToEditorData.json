@@ -9,14 +9,29 @@
         "name": "Animation",
         "dependencies": [
           {
+            "name": "AnimationClip",
+            "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
+              "Assets/My/TrackedImage/TrackedImage.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Animator",
-            "scenes": [],
+            "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
+              "Assets/My/TrackedImage/TrackedImage.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AnimatorController",
-            "scenes": [],
+            "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
+              "Assets/My/TrackedImage/TrackedImage.unity"
+            ],
             "dependencyType": 1,
             "icon": null
           },
@@ -24,6 +39,12 @@
             "name": "AnimatorOverrideController",
             "scenes": [],
             "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Motion",
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -40,6 +61,7 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 0,
@@ -47,13 +69,16 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioListener",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 0,
@@ -67,13 +92,17 @@
           },
           {
             "name": "AudioSource",
-            "scenes": [],
+            "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "SampleClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity"
+            ],
             "dependencyType": 1,
             "icon": null
           }
@@ -97,6 +126,7 @@
           {
             "name": "Camera",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 0,
@@ -117,6 +147,7 @@
           {
             "name": "Cubemap",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 0,
@@ -137,6 +168,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 1,
@@ -151,6 +183,7 @@
           {
             "name": "GameObject",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 0,
@@ -177,6 +210,7 @@
           {
             "name": "LevelGameManager",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 1,
@@ -203,6 +237,7 @@
           {
             "name": "LightmapSettings",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 0,
@@ -223,6 +258,7 @@
           {
             "name": "Material",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 0,
@@ -255,6 +291,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 0,
@@ -269,6 +306,7 @@
           {
             "name": "MonoScript",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 1,
@@ -277,6 +315,7 @@
           {
             "name": "NamedObject",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 1,
@@ -309,7 +348,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/My/TrackedImage/TrackedImage.unity"
+              "Assets/My/MainMenu/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -323,6 +362,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 0,
@@ -355,6 +395,7 @@
           {
             "name": "Shader",
             "scenes": [
+              "Assets/My/MainMenu/MainMenu.unity",
               "Assets/My/TrackedImage/TrackedImage.unity"
             ],
             "dependencyType": 0,
@@ -387,7 +428,7 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/My/TrackedImage/TrackedImage.unity"
+              "Assets/My/MainMenu/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -561,6 +602,24 @@
             "icon": "package/com.unity.modules.uielements"
           },
           {
+            "name": "Required by UnityAnalytics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unityanalytics"
+          },
+          {
+            "name": "Required by UnityAnalyticsCommon Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unityanalyticscommon"
+          },
+          {
+            "name": "Required by UnityConnect Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unityconnect"
+          },
+          {
             "name": "Required by UnityWebRequest Module",
             "scenes": [],
             "dependencyType": 2,
@@ -657,6 +716,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.uielements"
+          },
+          {
+            "name": "Required by UnityAnalytics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unityanalytics"
           },
           {
             "name": "Required by VR Module",
@@ -904,6 +969,24 @@
             "icon": "package/com.unity.modules.uielements"
           },
           {
+            "name": "Required by UnityAnalytics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unityanalytics"
+          },
+          {
+            "name": "Required by UnityAnalyticsCommon Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unityanalyticscommon"
+          },
+          {
+            "name": "Required by UnityConnect Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unityconnect"
+          },
+          {
             "name": "Required by UnityWebRequest Module",
             "scenes": [],
             "dependencyType": 2,
@@ -991,7 +1074,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/My/TrackedImage/TrackedImage.unity"
+              "Assets/My/MainMenu/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1034,7 +1117,7 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/My/TrackedImage/TrackedImage.unity"
+              "Assets/My/MainMenu/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1048,7 +1131,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/My/TrackedImage/TrackedImage.unity"
+              "Assets/My/MainMenu/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1066,8 +1149,41 @@
         "dependencies": []
       },
       {
-        "name": "UnityWebRequest",
+        "name": "UnityAnalytics",
         "dependencies": []
+      },
+      {
+        "name": "UnityAnalyticsCommon",
+        "dependencies": [
+          {
+            "name": "Required by UnityAnalytics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unityanalytics"
+          }
+        ]
+      },
+      {
+        "name": "UnityConnect",
+        "dependencies": [
+          {
+            "name": "Required by UnityAnalytics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unityanalytics"
+          }
+        ]
+      },
+      {
+        "name": "UnityWebRequest",
+        "dependencies": [
+          {
+            "name": "Required by UnityAnalytics Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.unityanalytics"
+          }
+        ]
       },
       {
         "name": "VFX",

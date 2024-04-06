@@ -1,4 +1,4 @@
-com.unity.template.ar_mobile
+com.DefaultCompany.ARPrototype
 color staticSplashScreenBackgroundColor
 id __arcore_cancelButton
 id __arcore_continueButton

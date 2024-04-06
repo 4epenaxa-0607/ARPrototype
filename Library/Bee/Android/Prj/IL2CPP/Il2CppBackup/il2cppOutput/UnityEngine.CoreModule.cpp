@@ -10851,6 +10851,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_dataPath_m4C8412CBE
 	String_t* icallRetVal = _il2cpp_icall_func();
 	return icallRetVal;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_unityVersion_m27BB3207901305BD239E1C3A74035E15CF3E5D21 (const RuntimeMethod* method) 
+{
+	typedef String_t* (*Application_get_unityVersion_m27BB3207901305BD239E1C3A74035E15CF3E5D21_ftn) ();
+	static Application_get_unityVersion_m27BB3207901305BD239E1C3A74035E15CF3E5D21_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Application_get_unityVersion_m27BB3207901305BD239E1C3A74035E15CF3E5D21_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_unityVersion()");
+	String_t* icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_version_m9CC0E94F12493682C1A2CA803083F6F01BA43124 (const RuntimeMethod* method) 
+{
+	typedef String_t* (*Application_get_version_m9CC0E94F12493682C1A2CA803083F6F01BA43124_ftn) ();
+	static Application_get_version_m9CC0E94F12493682C1A2CA803083F6F01BA43124_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Application_get_version_m9CC0E94F12493682C1A2CA803083F6F01BA43124_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_version()");
+	String_t* icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_productName_m9314FB94C4DE1F1731084FF30B9555F44BA477EB (const RuntimeMethod* method) 
+{
+	typedef String_t* (*Application_get_productName_m9314FB94C4DE1F1731084FF30B9555F44BA477EB_ftn) ();
+	static Application_get_productName_m9314FB94C4DE1F1731084FF30B9555F44BA477EB_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Application_get_productName_m9314FB94C4DE1F1731084FF30B9555F44BA477EB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_productName()");
+	String_t* icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_OpenURL_mE748FA4D503715DEE12BCA4BDD8A5305AE41DB89 (String_t* ___0_url, const RuntimeMethod* method) 
 {
 	typedef void (*Application_OpenURL_mE748FA4D503715DEE12BCA4BDD8A5305AE41DB89_ftn) (String_t*);

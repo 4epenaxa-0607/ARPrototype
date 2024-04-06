@@ -1,1 +1,1 @@
-com.unity.template.ar_mobile
+com.DefaultCompany.ARPrototype
